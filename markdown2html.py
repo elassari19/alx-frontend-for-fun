@@ -9,20 +9,20 @@ import re
 def convert_md_to_html(input_file, output_file):
     ''' convert to HTML file '''
     with open(input_file, encoding='utf-8') as f:
-        md_file_content = f.readlines()
+        md_content = f.readlines()
 
-    content = []
-    for line in md_file_content:
+    html_content = []
+    for line in md_content:
         match = re.match(r'(#){1,6} (.*)', line)
         if match:
-            heading_level = len(match.group(1))
-            heading_content = match.group(2)
-            content.append(f'<h{heading_level}>{heading_content}</h{heading_level}>\n')
+            h_level = len(match.group(1))
+            h_content = match.group(2)
+            html_content.append(f'<h{h_level}>{h_content}</h{h_level}>\n')
         else:
-            content.append(line)
+            html_content.append(line)
 
     with open(output_file, 'w', encoding='utf-8') as f:
-        f.writelines(content)
+        f.writelines(html_content)
 
 
 if __name__ == '__main__':
