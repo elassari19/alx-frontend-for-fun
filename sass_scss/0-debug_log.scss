@@ -1,0 +1,5 @@
+// should be print hello world in console using sass debug
+
+$debug-message: "Hello world";
+@debug $debug-message;
+

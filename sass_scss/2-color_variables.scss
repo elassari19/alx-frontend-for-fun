@@ -1,0 +1,20 @@
+// should be assigns color and bg to the HTML tags using 2 Sass variables
+
+
+$text-color: #3D3D3D;
+$bg-color: #6D6D6D;
+
+body{
+	color: $text-color;
+	background-color: $bg-color;
+}
+
+p{
+        color: $text-color;
+}
+
+h2{
+        background-color: $bg-color;
+}
+
+

@@ -1,0 +1,7 @@
+// should be loop through the list and assign the fontSize
+
+@for $value from 1 through 5 {
+  h#{$value} {
+    font-size: $value + px;
+  }
+}

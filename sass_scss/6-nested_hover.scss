@@ -1,0 +1,9 @@
+// should be assigns color to the button tags
+
+button {
+    color: #FF0000;
+
+    &:hover {
+        color: #00FF00;
+    }
+}

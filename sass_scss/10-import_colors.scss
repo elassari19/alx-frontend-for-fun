@@ -1,0 +1,16 @@
+// should be import $red, $green, and $blue from 10-colors.scss
+
+@import "10-colors.scss";
+
+.red{
+	color: $red;
+}
+
+.green{
+	color: $green;
+}
+
+.blue{
+	color: $blue;
+}
+
